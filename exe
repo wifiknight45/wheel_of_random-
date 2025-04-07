@@ -2,7 +2,7 @@ import random
 
 def number_game():
     # Initialize and shuffle numbers
-    numbersK = list(range(1, 101))  # 1 to 100
+    numbers = list(range(1, 101))  # 1 to 100 # Changed numbersK to numbers
     random.shuffle(numbers)
     index = 0
     
