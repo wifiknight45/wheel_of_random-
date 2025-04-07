@@ -1,0 +1,28 @@
+import random
+
+def number_game():
+    # Initialize and shuffle numbers
+    numbersK = list(range(1, 101))  # 1 to 100
+    random.shuffle(numbers)
+    index = 0
+    
+    print("Number Generator Game - Enter 'n' for next number or 'q' to quit")
+    
+    while True:
+        if index < len(numbers):
+            command = input("Command (n/q): ").lower()
+            if command == 'n':
+                print(f"Number: {numbers[index]}")
+                index += 1
+            elif command == 'q':
+                print("Thanks for playing!")
+                break
+            else:
+                print("Invalid command. Use 'n' for next or 'q' to quit")
+        else:
+            print("All numbers 1-100 generated! Starting new sequence.")
+            random.shuffle(numbers)
+            index = 0
+
+if __name__ == "__main__":
+    number_game()
