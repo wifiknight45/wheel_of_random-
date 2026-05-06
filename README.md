@@ -5,28 +5,21 @@ A Python game that generates numbers 1-100 in a random, non-repeating sequence u
 
 A Python game that generates numbers from 1 to 100 in a random, non-repeating sequence. Available in two versions: GUI (tkinter) and command-line.
 
-## Features
-- Generates numbers 1-100 in a random order
-- Ensures all numbers are used before repeating
-- Two interfaces:
-  - GUI version: Click a button to see the next number
-  - CLI version: Enter 'n' for next number, 'q' to quit
+## Setup
+Clone the repository:
+bash 
 
-## Requirements
-- Python 3.x
-- tkinter (usually included with Python) for GUI version
+git clone https://github.com/wifiknight45/wheel_of_random-.git
 
-## How to Run
-1. Clone the repository
-2. Run either:
-   - `python number_game_gui.py` for GUI version
-   - `python number_game_cli.py` for command-line version
+cd wheel_of_random-
+
+No external dependencies; only Python's built-in random module is used.
 
 ## Usage
-- GUI: Click "Generate Number" button
-- CLI: Type 'n' for next number, 'q' to exit
-- Sequence resets with a new random order after all 100 numbers are used
+Run the script with:
+bash
+python3 prng.py
 
-## Files
-- `number_game_gui.py`: GUI version with button interface
-- `number_game_cli.py`: Command-line version with text input
+Commands
+n = reveal the next random number
+q = quit the game 
